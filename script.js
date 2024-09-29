@@ -14,11 +14,12 @@ circle.style.height = '0';
 circle.style.width = '0';
 
 textSpan.textContent = 'Введите: red, green, yellow';
+
+eBtn.style.display = 'none';
+
 btn.addEventListener('click', function () {
   square.style.backgroundColor = input.value;
 });
-
-eBtn.style.display = 'none';
 
 inputRange.addEventListener('input', function (event) {
   rangeSpan.textContent = event.target.value;
